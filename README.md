@@ -1,62 +1,75 @@
-README
+# README
 
-Wymagania wstępne
+## Wymagania wstępne
 
-Aby pracować ze środowiskiem testowym, należy mieć zainstalowaną wersję Node.js (LTS):
-Node.js Download
+Aby pracować ze środowiskiem testowym, należy mieć zainstalowaną wersję **Node.js (LTS)**: [Node.js Download](https://nodejs.org/en/download/)
 
 Do pracy z Git wymagane jest posiadanie jednej z poniższych wersji:
 
-Git SCM
+- [Git SCM](https://git-scm.com/downloads)
+- [GitHub Desktop](https://github.com/apps/desktop)
 
-GitHub Desktop
-
-Pobranie źródeł
+## Pobranie źródeł
 
 Aby pobrać repozytorium, w terminalu wykonaj komendę:
 
+```sh
  git clone https://github.com/Voyager-Poland/Cypress.Voyager.Tests.git
+```
 
-Następnie otwórz Visual Studio Code, a następnie terminal skrótem:
+Następnie otwórz **Visual Studio Code**, a następnie terminal skrótem:
 
+```sh
 Ctrl + Shift + `
+```
 
-Instalacja zależności
+## Instalacja zależności
 
 W katalogu projektu uruchom:
 
+```sh
 npm install
+```
 
-Uruchomienie programu okienkowego Cypress
+## Uruchomienie programu okienkowego Cypress
 
 Aby uruchomić Cypress w trybie okienkowym, użyj jednej z poniższych komend:
 
+```sh
 npx cypress open
+```
 
 LUB
 
+```sh
 npm run cy:open
+```
 
 W oknie aplikacji wybierz odpowiednie testy do uruchomienia.
 
-Aby zakończyć działanie programu, naciśnij Ctrl + C.
+Aby zakończyć działanie programu, naciśnij **Ctrl + C**.
 
-Uruchomienie testów
+## Uruchomienie testów
 
-Uruchomienie wszystkich testów
+### Uruchomienie wszystkich testów
 
+```sh
 npx cypress run
+```
 
-Uruchomienie pojedynczego testu
+### Uruchomienie pojedynczego testu
 
 Aby uruchomić konkretny test, wykonaj komendę:
 
+```sh
 npx cypress run --spec "./cypress/e2e/sindbad/input-dektop-popular-swap.cy.ts"
+```
 
-Dodatkowe informacje
+## Dodatkowe informacje
 
-Więcej informacji na temat Cypress znajdziesz na stronie: Cypress.io
+Więcej informacji na temat Cypress znajdziesz na stronie: [Cypress.io](https://www.cypress.io/)
 
-Autor
+### Autor
 
-Kamil Śledziona
+**Kamil Śledziona**
+
