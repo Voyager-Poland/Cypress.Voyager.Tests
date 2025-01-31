@@ -15,7 +15,7 @@ links:
     url: "https://www.cypress.io/"
 relationships:
   DEPENDS_ON: 
-    -- 'ari:cloud:compass:6f4ff44f-3daf-4331-936e-f105ac8a0cc5:component/dbdd9e20-37cf-4147-9a6c-5bc93cc76ce7/528564e1-28a9-4603-9e08-b3deb392458b'
+    - 'ari:cloud:compass:6f4ff44f-3daf-4331-936e-f105ac8a0cc5:component/dbdd9e20-37cf-4147-9a6c-5bc93cc76ce7/528564e1-28a9-4603-9e08-b3deb392458b'
 labels:
   - source:github
   - s3
