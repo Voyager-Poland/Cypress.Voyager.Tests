@@ -17,11 +17,21 @@ Aby pobrać repozytorium, w terminalu wykonaj komendę:
  git clone https://github.com/Voyager-Poland/Cypress.Voyager.Tests.git
 ```
 
-Następnie otwórz **Visual Studio Code**, a następnie terminal skrótem:
+## Konfiguracja Visual Studio Code
 
-```sh
-Ctrl + Shift + `
-```
+Visual Studio Code jest zalecanym edytorem do pracy z tym projektem. Jeśli nie masz go jeszcze zainstalowanego, pobierz go tutaj: [Visual Studio Code](https://code.visualstudio.com/).
+
+Po instalacji otwórz program i wykonaj następujące kroki:
+
+1. Otwórz folder projektu w **Visual Studio Code** poprzez **File → Open Folder** i wybierz pobrany katalog repozytorium.
+2. Otwórz wbudowany terminal za pomocą skrótu klawiaturowego:
+   ```sh
+   Ctrl + Shift + `
+   ```
+3. Upewnij się, że masz zainstalowane rozszerzenia wspierające pracę z **JavaScript/TypeScript** i **Cypress**, np.:
+   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+   - [Cypress Snippets](https://marketplace.visualstudio.com/items?itemName=andrew-codes.cypress-snippets)
+   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ## Instalacja zależności
 
@@ -29,6 +39,23 @@ W katalogu projektu uruchom:
 
 ```sh
 npm install
+```
+
+## Włączenie uprawnień do uruchamiania skryptów w PowerShell
+
+Jeśli podczas uruchamiania skryptów w PowerShell występują problemy z uprawnieniami, wykonaj następujące kroki:
+
+1. Otwórz **PowerShell jako administrator** (kliknij **Start**, wpisz `PowerShell`, kliknij prawym przyciskiem i wybierz **Uruchom jako administrator**).
+2. Wykonaj następującą komendę, aby zezwolić na uruchamianie skryptów bez podpisu:
+   ```sh
+   Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+   ```
+3. Potwierdź zmianę, wpisując `Y` i naciskając **Enter**.
+
+Aby przywrócić domyślną politykę bezpieczeństwa później, możesz użyć:
+
+```sh
+Set-ExecutionPolicy Restricted -Scope CurrentUser
 ```
 
 ## Uruchomienie programu okienkowego Cypress
@@ -69,7 +96,10 @@ npx cypress run --spec "./cypress/e2e/sindbad/input-dektop-popular-swap.cy.ts"
 
 Więcej informacji na temat Cypress znajdziesz na stronie: [Cypress.io](https://www.cypress.io/)
 
-### Autor
+Jeśli chcesz nauczyć się więcej o automatyzacji testów z Cypress, polecam kurs **Cypress Automation Testing Framework - Zero To Hero** dostępny na platformie [O’Reilly](https://www.oreilly.com/).
 
-**Kamil Śledziona**
+### Autorzy
+
+**Kamil Śledziona**, **Andrzej Świstowski**
+
 
