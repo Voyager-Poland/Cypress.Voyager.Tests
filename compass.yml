@@ -20,6 +20,6 @@ labels:
   - source:github
   - s3
 customFields:
-  - name: SVNRepositiry
+  - name: SVNRepository
     type: text
     value: null
