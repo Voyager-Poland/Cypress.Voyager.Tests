@@ -14,7 +14,7 @@ Do pracy z Git wymagane jest posiadanie jednej z poniższych wersji:
 Aby pobrać repozytorium, w terminalu wykonaj komendę:
 
 ```sh
- git clone https://github.com/Voyager-Poland/Cypress.Voyager.Tests.git
+ git clone https://github.com/Voyager-Poland/Voyager.Cypress.S3.git
 ```
 
 ## Konfiguracja Visual Studio Code
