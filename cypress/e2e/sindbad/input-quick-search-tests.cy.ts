@@ -4,8 +4,9 @@ describe('Cities search ', () => {
     cy.viewport(1920, 1080);
 		cy.clearAllLocalStorage();
 		cy.clearAllCookies();
-    cy.visit('https://s3.t.voyager.pl/');
-		cy.wait(2000);
+    cy.visit(Cypress.env('website_adress'));
+		let delay: number = +Cypress.env('default_delay');
+		cy.wait(delay);
   });
 
 	it('should find cities when typed quickly', () => {

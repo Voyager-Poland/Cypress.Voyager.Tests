@@ -4,8 +4,9 @@ describe('Cities search desktop tests', () => {
     cy.viewport(390, 844); //Iphone 12 Pro
 		cy.clearAllLocalStorage();
 		cy.clearAllCookies();
-    cy.visit('https://s3.t.voyager.pl/');
-		cy.wait(1800);
+    cy.visit(Cypress.env('website_adress'));
+		let delay: number = +Cypress.env('default_delay');
+		cy.wait(delay);
   });
 
   it('should have correct starting values', () => {
