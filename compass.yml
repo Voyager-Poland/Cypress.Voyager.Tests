@@ -9,7 +9,7 @@ fields:
 links:
   - name: null
     type: REPOSITORY
-    url: https://github.com/Voyager-Poland/Cypress.Voyager.Tests
+    url: https://github.com/Voyager-Poland/Voyager.Cypress.S3
   - name: Strona Cypress
     type: OTHER_LINK
     url: "https://www.cypress.io/"
